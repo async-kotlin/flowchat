@@ -17,13 +17,19 @@ FlowChat — это Android-мессенджер, написанный с нул
 ```
 app/src/main/java/com/astfreelancer/flowchat2/
 ├── data/
-│   ├── db/          # Room: сущности, DAO, база данных
-│   ├── network/     # Retrofit: API, модели, обработка ошибок
-│   ├── prefs/       # DataStore: хранение deviceId
-│   └── repository/  # репозитории
-└── presentation/
-    ├── ui/          # экраны (Fragments, Adapters)
-    └── viewmodel/   # ViewModel, UI-состояние
+│   ├── db/            # Room: сущности, DAO, база данных
+│   ├── network/       # Retrofit: API, модели, обработка ошибок
+│   ├── prefs/         # DataStore: хранение deviceId
+│   └── repository/    # репозитории
+├── presentation/
+│   ├── ui/
+│   │   ├── theme/     # тема приложения
+│   │   ├── AppNavGraph.kt
+│   │   ├── ChatListScreen.kt
+│   │   └── ChatScreen.kt
+│   └── viewmodel/     # ViewModel, UI-состояние
+├── FlowChatApp.kt
+└── MainActivity.kt
 ```
 
 ## Требования
